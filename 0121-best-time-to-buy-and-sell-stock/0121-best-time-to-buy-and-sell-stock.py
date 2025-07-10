@@ -16,7 +16,7 @@ class Solution:
         for price in prices:
             if price < minimum:
                 minimum = price
-            if price> minimum:
+            else:
                 max_profit = max(max_profit, price - minimum)
         return max_profit
 
